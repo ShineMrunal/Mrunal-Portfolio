@@ -1,0 +1,202 @@
+/* styles.css */
+.underline-heading {
+    position: relative; /* Allows positioning of pseudo-elements */
+    display: inline-block; /* Shrinks the heading to fit the content */
+    color: white; 
+    padding-bottom: 8px; /* Space between text and underline */
+    margin-bottom: 1em; /* Space below the heading */
+}
+
+.underline-heading::after {
+    content: ""; /* Creates a pseudo-element */
+    display: block; /* Ensures it takes up space */
+    width: 50%; /* Adjust this percentage to change the underline width */
+    height: 2px; /* Thickness of the underline */
+    background-color: crimson; /* Color of the underline */
+    position: absolute; /* Positions it relative to the heading */
+    bottom: 0; /* Aligns it to the bottom of the heading */
+    left: 50%; /* Centers the underline */
+    transform: translateX(-50%); /* Centers the underline by shifting it */
+}
+
+.bold {
+    font-weight: bold; /* Makes the text bold */
+}
+
+/* styles.css */
+.white-button {
+    text-align: center; /* Center the button */
+    margin: 20px 0; /* Add margin around the button */
+}
+
+.white-button a {
+    text-decoration: none; /* Remove underline from link */
+    color: #007bff; /* Link color */
+    font-size: 16px; /* Font size for the button */
+    cursor: pointer; /* Change cursor to pointer for the button */
+}
+
+.additional-content {
+    display: none; /* Hide additional content by default */
+    margin-top: 10px; /* Space above additional content */
+}
+
+.additional-content p {
+    margin: 0; /* Remove default margins from paragraphs */
+}
+
+
+.spaced-line {
+    margin-bottom: 20px; /* Adjust the spacing between paragraphs */
+}
+
+
+/* styles.css */
+
+/* Style for the section */
+.image-gallery {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.image-gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333; /* Darker text color */
+}
+
+/* Container for the gallery grid */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Each gallery item */
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Responsive width, adjust based on number of items per row */
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Light border around images */
+    border-radius: 8px; /* Rounded corners for images */
+    overflow: hidden;
+    background-color: #fff; /* White background for items */
+    text-align: center; /* Center text below images */
+    padding: 10px; /* Padding inside each item */
+}
+
+.gallery-item img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Border between image and text */
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555; /* Gray text color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #a43f49;
+    margin-right: 10px;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #a43f49;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #8c363e;
+}
+
+/* Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.resume-download {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #a43f49;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #8c363e;
+}
